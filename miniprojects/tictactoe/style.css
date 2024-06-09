@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222725;
+  text-align: center;
+  color: #f7f7f2;
+  font-family: "Kanit", sans-serif;
+}
+
+.container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 55vmin;
+  width: 55vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 17vmin;
+  width: 15vmin;
+  border-radius: 1rem;
+  box-shadow: 5px 1px 5px #f7f7f2;
+  font-weight: 700;
+  font-size: 11vmin;
+  text-align: center;
+  color: #121113;
+  border: 3px solid #899878;
+  background-color: #e4e6c3;
+  text-shadow: 5px 1px 5px #899878;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button {
+  height: inherit;
+  width: inherit;
+  border-radius: 1rem;
+  box-shadow: 5px 1px 5px #f7f7f2;
+  font-weight: 700;
+  font-size: 3vmin;
+  text-align: center;
+  color: #121113;
+  margin: 5px;
+  border: 3px solid #899878;
+  background-color: #e4e6c3;
+  padding: .7rem;
+  text-shadow: 5px 1px 5px #899878;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+h1 {
+  font-size: 14vmin;
+  text-align: center;
+  color: #f7f7f2;
+  text-shadow: 5px 1px 5px #899878;
+  margin: 0;
+}
+#credit{
+  display: flex;
+  justify-content: center;
+  font-size: 2vmin;
+  text-align: center;
+  color: #f7f7f2;
+  text-shadow: 3px 1px 5px #899878;
+  margin: 0;
+}
+#message {
+  margin: 0 20px;
+  font-size: 2vmin;
+  color: #f7f7f2;
+}
+
+button:active, .box:active {
+  animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
