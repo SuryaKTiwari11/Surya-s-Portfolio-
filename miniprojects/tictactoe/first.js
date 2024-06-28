@@ -125,6 +125,6 @@ boxes.forEach((box) => {
 // it takes the value disables it after an input, also checks if the winner has been found or not;
 
 newGameBtn.addEventListener("click", resetScore);
-newGameBtn.addEventListener("click", re);
+newGameBtn.addEventListener("click", reset_game);
 resetBtn.addEventListener("click", reset_game); // Changed from reset_game to resetScore to reset the scores on click
 // to reset the game on click
